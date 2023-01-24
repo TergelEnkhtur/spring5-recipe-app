@@ -9,7 +9,7 @@ public class Notes {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @OneToOne // May be two unidirectional mappings as opposed to a bidirectional one
     private Recipe recipe;
 
     @Lob
