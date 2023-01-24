@@ -1,4 +1,4 @@
-package guru.springframework.spring5recipeapp.controllers;
+package guru.springframework.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-    @RequestMapping({"","/","index"})
-    public String getIndexPage() {
+    @RequestMapping({"", "/", "/index"})
+    public String getIndexPage(){
         return "index";
     }
 }
