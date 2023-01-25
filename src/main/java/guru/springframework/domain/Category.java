@@ -6,6 +6,7 @@ import lombok.*;
 import java.util.Set;
 
 @Data
+@EqualsAndHashCode(exclude = {"recipes"}) // prevent stackoverflow from circular reference
 @Entity
 public class Category {
 
